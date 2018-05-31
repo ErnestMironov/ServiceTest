@@ -52,7 +52,7 @@ body,*{
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(54, 54, 54);
 }
-.container, .weRepairs__blocks, .workSchemes_wrap{
+.container, .weRepairs__blocks, .workSchemes_wrap, .rightColumn, .adress, .leftColumn, .information{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -97,6 +97,9 @@ header .container{
 .header__phone{
 	font-size: 34px;
 }
+.header__phone a {
+	text-decoration: none;
+}
 .mainBanner{
 	background-color: rgb(128, 195, 64);
 	height: 537px;
@@ -131,7 +134,7 @@ h1{
 
 .callbackForm input{
 	border-radius: 7px;
-	width: 100%;
+	width: 439px;
 	height: 54px;
 	border: 2px solid white;
 	box-sizing: border-box;
@@ -153,7 +156,7 @@ h1{
 	position: absolute;
 }
 .mainBanner__img-mobile{
-	bottom: -3px;
+	bottom: -2.2px;
 	left: 47px;
 }
 .mainBanner__img-netbook{
@@ -259,6 +262,9 @@ h2{
 .problems h2{
 	width: 499px;
 }
+.problems h2 hr{
+	border: 1px solid #cccccc;
+}
 .problems h2 span{
 	word-spacing: -1px;
 	font-size: 33px;
@@ -268,7 +274,7 @@ h2{
 	font-size: 14px;
 }
 .workScheme{
-	height: 89px;
+	height: auto;
 	margin-top: 93px;
 }
 .workSchemes_wrap1{
@@ -329,11 +335,11 @@ h2{
 }
 .workScheme__lines{
 	position: absolute;
-	bottom: 68px;
+	bottom: -39px;
 	z-index: -1;
 }
 .warning{
-	margin-top: 59px;
+	margin-top: 75px;
 	height: 113px;
 	position: relative;
 }
@@ -347,8 +353,9 @@ h2{
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-	justify-content: center;
-	align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
 }
 .warning__text{
 	margin-left: 40px;
@@ -395,6 +402,9 @@ h2{
 	border: 2px solid #80c340;
 	cursor: pointer;
 }
+.rewievs__slider__slide:focus{
+	outline: none;
+}
 .rewievs__slider__slide:hover > .slide__plus{
     display: block;
     position: absolute;
@@ -413,6 +423,118 @@ h2{
     font-size: 32px;
 }
 .slick-list{
-	width: 885px;
+	width: 835px;
 	margin: 0 auto;
+}
+.questions{
+	margin-top: 136px;
+	background-color: rgb(128, 195, 64);
+	height: 324px;
+}
+.questions .container{
+	justify-content: space-around;
+	position: relative;
+	height: 100%;
+}
+.questions img{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.questions .container:before{
+	content:'';
+	width: 30%;
+}
+.questionsForm{
+	width: 585px;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+}
+footer{
+	height: 200px;
+		background-color: #585858;
+}
+footer .container{
+	justify-content: space-between;
+	height: 100%;
+}
+
+.ymaps-2-1-64-map{
+ 	width: 257px!important;
+ 	height: 155px!important;
+ }
+.rightColumn{
+	justify-content: space-between;
+    width: 530px;
+    height: 100%;
+    align-items: center;
+}
+.adress{
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: flex-end;
+	justify-content: center;
+    text-align: right;
+    line-height: 30px;
+}
+.adress__text, .footer__number, .footer__menu li a {
+	color: white;
+}
+.adress__text{
+	font-size: 15px;
+}
+.footer__number{
+	font-size: 30px;
+}
+.footer__number a{
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
+.leftColumn{
+	height: 100%;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+}
+.footer__menu{
+	height: 63px;
+	margin-top: 16px;
+}
+.footer__menu li{
+	margin-top: 11px;
+}
+.footer__menu li a{
+	font-size: 11px;
+	text-decoration: none;
+}
+.information{
+	height: 32px;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-size: 11px;
+	color: #7d7d7d;
+	background-color: #313131;
 }
